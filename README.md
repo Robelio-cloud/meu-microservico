@@ -9,23 +9,24 @@ Este projeto contém um microserviço simples em Python (`app.py`) que retorna m
 
 ### Comandos Docker
 
-#### a) Criar a imagem Docker
-```bash
+### a) Criar a imagem Docker
+
 docker build -t meu-microservico .
 
-#### b) Executar o container
-```bash
+### b) Executar o container
+
 docker run -d -p 5000:5000 --name microservico meu-microservico
 
-#### c) Acessar o terminal do container
-```bash
+### c) Acessar o terminal do container
+
 docker exec -it microservico bash
 
-#### d) Verificar se o container está ativo
-```bash
+### d) Verificar se o container está ativo
+
 docker ps
 
-#### e) Testar a aplicação
-```bash
+### e) Testar a aplicação
+
 curl http://localhost:5000/
+
 curl http://localhost:5000/status
